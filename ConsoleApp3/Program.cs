@@ -6,6 +6,17 @@ namespace ConsoleApp3 {
     internal class Program {
         static void Main(string[] args) {
 
+            List<int> integers = new List<int>();
+            integers.AddRange(new int[] { 1, 2, 3 });
+            foreach(int i in integers) {
+                Console.WriteLine(i);
+            }
+
+            Student s = new Student();
+            s.Id = 1;
+            s.Name = "QQQ";
+
+
             List<Student> students = new List<Student>();
             students.Add(new Student { Id = 1, Name = "Fred" });
             students.Add(new Student { Id = 2, Name = "Wilma" });
@@ -19,6 +30,7 @@ namespace ConsoleApp3 {
             var Wilma = StudentDictionary[2];
             Console.WriteLine($"Id:{Wilma.Id}, Name: {Wilma.Name}");
 
+            List<bool> ints = new List<bool>();
 
             /*
                         List<string> strings = new List<string>();
